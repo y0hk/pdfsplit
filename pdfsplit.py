@@ -15,7 +15,7 @@ Options:
 '''
 
 from docopt import docopt
-import os
+import os, copy
 from hashids import Hashids
 from PyPDF2 import PdfFileReader, PdfFileWriter
 
@@ -27,12 +27,11 @@ def main():
         return
 
     original_L = PdfFileReader(open(filepath, 'rb'))
-    original_R = PdfFileReader(open(filepath, 'rb'))
     pagenum = original_L.getNumPages()
     outpdf = PdfFileWriter()
-
     for i in range(pagenum):
         page_L = original_L.getPage(i)
+        page_R = copy.copy(page_L)
         page_L.mediaBox.lowerRight = (
             842,
             595,
@@ -40,7 +39,6 @@ def main():
         page_L.rotateClockwise(270)
         outpdf.addPage(page_L)
 
-        page_R = original_R.getPage(i)
         page_R.mediaBox.upperLeft = (
             0,
             595

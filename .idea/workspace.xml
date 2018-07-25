@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d39614b8-e793-4b8b-aac0-6f5ec99eeb02" name="Default" comment="" />
+    <list default="true" id="d39614b8-e793-4b8b-aac0-6f5ec99eeb02" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/pdfsplit.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdfsplit.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +16,8 @@
       <file leaf-file-name="pdfsplit.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pdfsplit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="240">
+              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
               <folding>
                 <element signature="e#266#291#0" expanded="true" />
               </folding>
@@ -50,7 +52,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="328" />
     <option name="width" value="1260" />
     <option name="height" value="594" />
   </component>
@@ -100,7 +102,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1260" height="594" extended-state="0" />
+    <frame x="0" y="328" width="1260" height="594" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24939467" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -164,8 +166,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pdfsplit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="240">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
           <folding>
             <element signature="e#266#291#0" expanded="true" />
           </folding>
