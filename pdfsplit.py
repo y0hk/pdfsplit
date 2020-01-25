@@ -15,9 +15,8 @@ Options:
 '''
 
 from docopt import docopt
-import os, copy
-from hashids import Hashids
 from PyPDF2 import PdfFileReader, PdfFileWriter
+import os, copy, datetime
 
 def main():
     arg = docopt(__doc__)
@@ -47,8 +46,8 @@ def main():
         outpdf.addPage(page_R)
 
     root, ext = os.path.splitext(filepath)
-    id = Hashids(salt='Split PDF').encode(321)
-    outfilepath = root + id + ext
+    now = datetime.datetime.now()
+    outfilepath = root + now.strftime('%Y%m%d%H%M%S') + ext
 
     outputStream = open(outfilepath, 'wb')
     outpdf.write(outputStream)
